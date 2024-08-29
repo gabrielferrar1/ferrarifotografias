@@ -18,8 +18,9 @@ body {
 }
 
 .logoFerrari {
-  max-height: 1000px;
+  max-height: 80px;
   margin-right: 10px;
+  border-radius: 1000px;
 }
 
 .navbar-nav .nav-link {
@@ -61,13 +62,14 @@ section.bg-dark .display-4 {
 #servicos img {
   width: 100%;
   height: auto;
-  margin-top: 10px;
+  max-width: 400px;
+  margin-top: 12px;
 }
 
 iframe {
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 /* Sessão Profissionais */
@@ -79,10 +81,13 @@ iframe {
   margin-bottom: 20px;
 }
 
-.imagemProfissionais {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+#profissionais img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 1000px;
+  border: solid 2px #101546;
 }
 
 /* Sessão Blog */
@@ -126,8 +131,11 @@ blockquote {
 #clientes img {
   width: 100%;
   height: auto;
+  max-width: 400px;
   margin-top: 10px;
+  object-fit: cover;
 }
+
 /* Footer */
 footer {
   background-color: #343a40;
