@@ -18,7 +18,7 @@ body {
 }
 
 .logoFerrari {
-  max-height: 50px;
+  max-height: 1000px;
   margin-right: 10px;
 }
 
@@ -94,6 +94,19 @@ iframe {
   margin-bottom: 20px;
 }
 
+.autor-info {
+  font-size: small;
+  font-style: italic;
+  margin-top: 10px;
+  color: #555;
+}
+
+#blog img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
 /* Sessão Clientes */
 #clientes {
   background-color: #f8f9fa;
@@ -110,6 +123,11 @@ blockquote {
   margin-bottom: 15px;
 }
 
+#clientes img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
 /* Footer */
 footer {
   background-color: #343a40;
