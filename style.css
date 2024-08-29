@@ -1,21 +1,120 @@
+/* Geral */
 body {
-  background-color: rgba(124, 124, 224, 0.5);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/* Barra de Navegação */
+.navbar-custom {
+  padding: 0 15px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
 }
 
 .logoFerrari {
-  border: 3px solid; /* Cor e espessura da borda */
-  border-radius: 1000px; /* Cantos arredondados */
-  padding: 5px; /* Espaço entre a borda e o conteúdo */
+  max-height: 50px;
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+  margin-left: 15px;
+}
+
+/* Sessão de Introdução */
+section.bg-dark {
+  background-color: #343a40 !important;
+  color: #ffffff !important;
+}
+
+section.bg-dark .display-4 {
+  margin-bottom: 20px;
+}
+
+/* Sessão Sobre */
+#sobre {
+  background-color: #f8f9fa;
+}
+
+#sobre h2 {
+  margin-bottom: 20px;
+}
+
+#sobre p {
+  margin-bottom: 15px;
+}
+
+/* Sessão de Serviços */
+#servicos {
+  background-color: #ffffff;
+}
+
+#servicos h2 {
+  margin-bottom: 20px;
+}
+
+#servicos img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Sessão Profissionais */
+#profissionais {
+  background-color: #f8f9fa;
+}
+
+#profissionais h2 {
+  margin-bottom: 20px;
 }
 
 .imagemProfissionais {
-  width: 100%; /* Ajusta a imagem para ocupar toda a largura disponível do contêiner */
-  max-width: 200px; /* Define uma largura máxima para a imagem */
-  height: auto; /* Mantém a proporção da imagem */
-  border-radius: 300px; /* Adiciona bordas arredondadas se desejado */
-  display: block; /* Garante que a imagem seja exibida como um bloco */
-  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-.imagemServiços {
+/* Sessão Blog */
+#blog {
+  background-color: #ffffff;
+}
+
+#blog h2 {
+  margin-bottom: 20px;
+}
+
+/* Sessão Clientes */
+#clientes {
+  background-color: #f8f9fa;
+}
+
+#clientes h2 {
+  margin-bottom: 20px;
+}
+
+blockquote {
+  background-color: #ffffff;
+  border-left: 5px solid #343a40;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+}
+
+footer p {
+  margin-bottom: 0;
 }
