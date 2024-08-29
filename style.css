@@ -1,0 +1,21 @@
+body {
+  background-color: rgba(124, 124, 224, 0.5);
+}
+
+.logoFerrari {
+  border: 3px solid; /* Cor e espessura da borda */
+  border-radius: 1000px; /* Cantos arredondados */
+  padding: 5px; /* Espaço entre a borda e o conteúdo */
+}
+
+.imagemProfissionais {
+  width: 100%; /* Ajusta a imagem para ocupar toda a largura disponível do contêiner */
+  max-width: 200px; /* Define uma largura máxima para a imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 300px; /* Adiciona bordas arredondadas se desejado */
+  display: block; /* Garante que a imagem seja exibida como um bloco */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+.imagemServiços {
+}
