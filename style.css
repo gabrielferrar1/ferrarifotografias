@@ -20,7 +20,7 @@ body {
 .logoFerrari {
   max-height: 1000px;
   margin-right: 10px;
-  border: solid 10px rgb(154, 147, 170);
+  border: 4px solid white;
   border-radius: 1000px;
 }
 
@@ -30,12 +30,31 @@ body {
 
 /* Sessão de Introdução */
 section.bg-dark {
-  background-color: #343a40 !important;
+  background-image: #172c41 !important;
   color: #ffffff !important;
 }
 
 section.bg-dark .display-4 {
   margin-bottom: 20px;
+}
+
+/* Sessão de Contato*/
+.whatsappBotao {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.whatsappBotao:hover {
+  background-color: #128c7e;
 }
 
 /* Sessão Sobre */
@@ -60,34 +79,27 @@ section.bg-dark .display-4 {
   margin-bottom: 20px;
 }
 
-#servicos img {
-  width: 100%;
-  height: auto;
-  max-width: 400px;
-  margin-top: 12px;
+#servicos h5 {
+  margin: 0;
+  font-size: 1.5rem;
 }
 
-iframe {
-  width: 100%;
-  height: auto;
-  margin-bottom: 12px;
+#servicos p {
+  margin: 0;
+  font-size: 1rem;
 }
 
 /* Sessão Profissionais */
-#profissionais {
-  background-color: #f8f9fa;
-}
-
 #profissionais h2 {
   margin-bottom: 20px;
 }
 
 #profissionais img {
-  width: 200px;
+  width: cover;
   height: 200px;
   object-fit: cover;
-  margin-bottom: 15px;
-  border-radius: 1000px;
+  margin-bottom: 20px;
+  border-radius: px;
   border: solid 2px #101546;
 }
 
@@ -100,7 +112,7 @@ iframe {
   margin-bottom: 20px;
 }
 
-.autor-info {
+.autorInfo {
   font-size: small;
   font-style: italic;
   margin-top: 10px;
@@ -108,11 +120,34 @@ iframe {
 }
 
 #blog img {
-  width: 100%;
-  height: auto;
+  width: 300px; /* Defina uma largura fixa */
+  height: 300px; /* Defina uma altura fixa */
+  object-fit: cover; /* Ajusta a imagem para preencher o contêiner sem distorção */
   margin-top: 10px;
+  border: 4px solid #343a40;
 }
 
+.posicaoBotao {
+  margin-top: 15px;
+}
+
+.CliqueAquiBotao {
+  display: inline-block;
+  background-color: #343a40;
+  color: white;
+  padding: 8px 10px;
+  font-size: 14px;
+
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.CliqueAquiBotao:hover {
+  background-color: #606d75;
+}
 /* Sessão Clientes */
 #clientes {
   background-color: #f8f9fa;
@@ -122,19 +157,38 @@ iframe {
   margin-bottom: 20px;
 }
 
-blockquote {
-  background-color: #ffffff;
-  border-left: 5px solid #343a40;
-  padding: 20px;
-  margin-bottom: 15px;
+#clientes footer {
+  color: white;
+  background-color: #343a40;
+  max-width: 300px;
 }
 
-#clientes img {
+.depoimentos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  min-width: 300px;
+  max-width: 48%;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cardImagem {
   width: 100%;
   height: auto;
-  max-width: 400px;
-  margin-top: 10px;
-  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.cardTexto {
+  text-align: justify;
 }
 
 /* Footer */
