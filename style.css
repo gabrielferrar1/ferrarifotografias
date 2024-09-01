@@ -17,18 +17,11 @@ body {
   align-items: center;
 }
 
-.logoFerrari {
-  max-height: 1000px;
-  margin-right: 10px;
-  border: 4px solid white;
-  border-radius: 1000px;
-}
-
 .navbar-nav .nav-link {
   margin-left: 15px;
 }
 
-/* Sessão de Introdução */
+/* Seção de Introdução */
 section.bg-dark {
   background-image: #172c41 !important;
   color: #ffffff !important;
@@ -38,7 +31,17 @@ section.bg-dark .display-4 {
   margin-bottom: 20px;
 }
 
-/* Sessão de Contato*/
+.logoFerrari {
+  max-height: 1100px; /* Ajuste para um tamanho mais apropriado */
+  margin-right: 10px;
+  border: 4px solid white;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* Seção de Contato*/
 .whatsappBotao {
   display: inline-block;
   background-color: #25d366;
@@ -57,7 +60,7 @@ section.bg-dark .display-4 {
   background-color: #128c7e;
 }
 
-/* Sessão Sobre */
+/* Seção Sobre */
 #sobre {
   background-color: #f8f9fa;
 }
@@ -70,7 +73,7 @@ section.bg-dark .display-4 {
   margin-bottom: 15px;
 }
 
-/* Sessão de Serviços */
+/* Seção de Serviços */
 #servicos {
   background-color: #ffffff;
 }
@@ -85,11 +88,46 @@ section.bg-dark .display-4 {
 }
 
 #servicos p {
-  margin: 0;
+  margin: 20;
   font-size: 1rem;
 }
 
-/* Sessão Profissionais */
+/* Carrossel */
+.carousel-caption {
+  position: static;
+  background: rgba(148, 146, 146, 0.7);
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.carousel-inner img {
+  height: 700px;
+  object-fit: cover;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-caption h5 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.carousel-caption .btn {
+  margin-top: 10px;
+  color: #fff;
+  z-index: 1;
+  position: relative;
+}
+
+/* Seção Profissionais */
 #profissionais h2 {
   margin-bottom: 20px;
 }
@@ -103,7 +141,7 @@ section.bg-dark .display-4 {
   border: solid 2px #101546;
 }
 
-/* Sessão Blog */
+/* Seção Blog */
 #blog {
   background-color: #ffffff;
 }
@@ -112,19 +150,28 @@ section.bg-dark .display-4 {
   margin-bottom: 20px;
 }
 
+#blog .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#blog img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  margin-top: 10px;
+  border: 4px solid #343a40;
+  border-radius: 10px;
+}
+
 .autorInfo {
   font-size: small;
   font-style: italic;
   margin-top: 10px;
   color: #555;
-}
-
-#blog img {
-  width: 300px; /* Defina uma largura fixa */
-  height: 300px; /* Defina uma altura fixa */
-  object-fit: cover; /* Ajusta a imagem para preencher o contêiner sem distorção */
-  margin-top: 10px;
-  border: 4px solid #343a40;
 }
 
 .posicaoBotao {
@@ -148,7 +195,8 @@ section.bg-dark .display-4 {
 .CliqueAquiBotao:hover {
   background-color: #606d75;
 }
-/* Sessão Clientes */
+
+/* Seção Clientes */
 #clientes {
   background-color: #f8f9fa;
 }
@@ -173,7 +221,7 @@ section.bg-dark .display-4 {
 .card {
   flex: 1;
   min-width: 300px;
-  max-width: 48%;
+  max-width: 50%;
   background-color: #f8f8f8;
   padding: 20px;
   border-radius: 10px;
@@ -183,12 +231,101 @@ section.bg-dark .display-4 {
 .cardImagem {
   width: 100%;
   height: auto;
+  border: solid 2px #343a40;
   border-radius: 10px;
   margin-bottom: 10px;
 }
 
 .cardTexto {
   text-align: justify;
+}
+
+/* Seção Formulário */
+.form-container {
+  width: 400px;
+  margin: 0 auto; /* Centraliza o formulário horizontalmente */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formGrupo {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #25d366;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #128c7e;
+}
+
+/* Cartão Redes Sociais */
+
+.contatoCard {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.contatoInfo h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.contatoInfo p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.contatoInfo h6 {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.redesSociais {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.redesSociais:last-child {
+  margin-right: 0;
 }
 
 /* Footer */
